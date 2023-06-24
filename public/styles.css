@@ -1,0 +1,215 @@
+@media screen and (max-width: 600px) {
+    #main-background {
+        color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.92;
+        background-color: #000000;
+background-image: linear-gradient(to right top, #f99bd0, #e697d8, #cf95df, #b594e3, #9793e5, #7f9eed, #65a7f2, #48b0f2, #42c4f6, #53d7f7, #71e9f5, #94f9f3);
+           }
+
+    #title {
+        font-size: 35px;
+        padding: 2.5rem 3rem 0rem;
+    }
+
+    #subtitle {
+        font-size: .8rem;
+        text-align: center;
+        padding: 0rem 3rem 1rem;
+    }
+
+    .navbar {
+        padding: 0 0 0rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .explore-section {
+        padding-bottom: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    #main-background {
+        color: white;
+        background-repeat: no-repeat;
+        background: url('../svg/yw.svg');
+        background-size:cover;
+        opacity: 0.92;
+        background-color: #000000;
+    background-image: linear-gradient(to right top, #f99bd0, #e691d5, #ce89da, #b182df, #8c7ee2, #6f8bec, #4b96f3, #00a0f5, #00b9fa, #1ed0f9, #61e6f5, #94f9f3);
+       }
+
+    #title {
+        padding: 3.5rem 3rem 0rem;
+        font-weight: 500;
+        font-size: 60px;
+    }
+
+
+
+
+    .navbar-brand {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.8rem;
+        font-weight: 300;
+    }
+
+    .navbar {
+        padding: 0 0 0rem;
+    }
+
+
+    #subtitle {
+        font-size: 1.05rem;
+        text-align: center;
+        padding: 0rem 3rem 2rem;
+    }
+
+}
+
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #2B303A;
+    font-weight: 300;
+}
+
+/* Link Tag Classes */
+a {
+    text-decoration: none;
+    color: #2B303A;
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+}
+
+/* Display Visibility of Cards */
+.disappear {
+    display: none;
+}
+
+/* Spacing/Padding of Main Page */
+.container-fluid {
+    padding: 3% 15% 6%;
+}
+
+/* Search Bar & Span Element */
+.form {
+    position: relative;
+}
+
+.form span {
+    position: absolute;
+    left: 17px;
+    top: 13px;
+    padding: 2px;
+    padding-right: 10px;
+    border-right: 1px solid #d1d5db;
+}
+
+.form-input {
+    height: 55px;
+    text-indent: 50px;
+    border-radius: 30px;
+    background-color: #ffffffef;
+}
+
+.form-input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.left-pan i {
+    padding-left: 10px;
+}
+
+/* Quiz Card */
+.quiz-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.quiz-card {
+    background: #ffffff;
+    box-shadow: 0px 6px 18px rgba(197, 20, 20, 0.1);
+    width: 100%;
+    max-width: 600px;
+    max-height: 700px;
+    margin: 2em;
+    border-radius: 40px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-card-header {
+ 
+    margin: 0;
+    height: 225px;
+    width: 100%;
+    display: grid;
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 50px; */
+    border-radius:40px;
+}
+
+.quiz-card:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-card-content {
+    padding: 18px 18px 24px 18px;
+    margin: 0;
+}
+
+.quiz-info {
+    display: table;
+    width: 100%;
+}
+
+.quiz-info-section {
+    display: table-cell;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.quiz-info-section span {
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.card-center {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.button-center {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.topic-tag {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.css-1wnsr1i {
+    border-radius: 10px;
+    border: none !important;
+}
