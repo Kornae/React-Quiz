@@ -7,54 +7,62 @@ const quiz = [{
 {
     id: 2,
     title: 'Politics',
-    img: '../images/thecapital.jpg',
+    img: '../images/capital2.jpg',
     api: 'https://opentdb.com/api.php?amount=10&category=24&type=multiple&encode=url3986'
 },
 {
     id: 3,
-    title: 'Celebrities',
-    img: '../images/cali2.jpg',
-    api: 'https://opentdb.com/api.php?amount=10&category=26&type=multiple&encode=url3986'
-}, {
-    id: 4,
-    title: 'Music',
-    img: '../images/guitar.jpg',
-    api: 'https://opentdb.com/api.php?amount=10&category=12&type=multiple&encode=url3986'
-},
-
-{
-    id: 5,
-    title: 'Vehicles',
-    img: '../images/cardash.jpg',
-    api: 'https://opentdb.com/api.php?amount=10&category=28&type=multiple&encode=url3986'
-}, {
-    id: 6,
     title: 'Sports',
-    img: '../images/track.jpg',
+    img: '../images/skii.jpg',
     api: 'https://opentdb.com/api.php?amount=10&category=21&type=multiple&encode=url3986'
 },
 {
-    id: 7,
-    title: 'Television',
-    img: '../images/disneyplus.jpg',
-    api: 'https://opentdb.com/api.php?amount=10&category=14&type=multiple&encode=url3986'
+    id: 4,
+    title: 'History',
+    img: '../images/rushmore.jpg',
+    api: 'https://opentdb.com/api.php?amount=10&category=23&type=multiple&encode=url3986'
 },
 {
-    id: 8,
+    id: 5,
+    title: 'Celebrities',
+    img: '../images/holly.jpg',
+    api: 'https://opentdb.com/api.php?amount=10&category=26&type=multiple&encode=url3986'
+},
+{
+    id: 6,
     title: 'Movies & Film',
     alt: 'Movies%20&%20Film',
     img: '../images/movies.jpg',
     api: 'https://opentdb.com/api.php?amount=10&category=11&type=multiple&encode=url3986'
 }, {
+    id: 7,
+    title: 'Television',
+    img: '../images/disneyplus.jpg',
+    api: 'https://opentdb.com/api.php?amount=10&category=14&type=multiple&encode=url3986'
+},
+
+{
+    id: 8,
+    title: 'Vehicles',
+    img: '../images/cardash.jpg',
+    api: 'https://opentdb.com/api.php?amount=10&category=28&type=multiple&encode=url3986'
+},
+
+{
     id: 9,
     title: 'Gaming',
     img: '../images/ps5.jpg',
     api: 'https://opentdb.com/api.php?amount=10&category=15&type=multiple&encode=url3986'
 },
-
-
 {
     id: 10,
+    title: 'Music',
+    img: '../images/piano2.jpg',
+    api: 'https://opentdb.com/api.php?amount=10&category=12&type=multiple&encode=url3986'
+},
+
+{
+    id: 11,
     title: 'Math',
     img: '../images/mathsigns.jpg',
     api: 'https://opentdb.com/api.php?amount=10&category=19&type=multiple&encode=url3986'
@@ -62,21 +70,16 @@ const quiz = [{
 },
 
 {
-    id: 11,
+    id: 12,
     title: 'Art',
     img: '../images/artstrokes.jpg',
     api: 'https://opentdb.com/api.php?amount=10&category=25&type=multiple&encode=url3986'
 },
 {
-    id: 12,
+    id: 13,
     title: 'Science',
     img: '../images/sciencegreen.jpg',
     api: 'https://opentdb.com/api.php?amount=10&category=17&type=multiple&encode=url3986'
-}, {
-    id: 13,
-    title: 'History',
-    img: '../images/rushmore.jpg',
-    api: 'https://opentdb.com/api.php?amount=10&category=23&type=multiple&encode=url3986'
 },
 {
     id: 14,
