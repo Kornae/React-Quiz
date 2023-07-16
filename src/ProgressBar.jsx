@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const ProgressBar = ({ value, max, width = 180, className = "" }) => {
+const ProgressBar = ({ value, max, width = '100%', className = "" }) => {
   const svgRef = useRef(null);
 
   useEffect(() => {

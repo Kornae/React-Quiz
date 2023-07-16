@@ -6,10 +6,10 @@
 
     #quizContainer {
         height: 100vh;
-        margin: 0;
+        position: relative;
         display: grid;
         place-items: center;
-        background-color: #f4f4f4;
+      
     }
 
 }
@@ -17,15 +17,25 @@
 @media screen and (min-width: 1024px) {
     #quizContainer {
         height: 100vh;
-        margin: 0;
+        padding: 30px;
         display: grid;
         place-items: center;
-background-image: linear-gradient(to right top, #fad5ea, #eecae9, #ddc0e9, #c9b7e9, #b0b0e9, #a1b6ee, #91bcf1, #82c1f1, #8ad2f5, #9be2f6, #b2f1f8, #ccfffc);
-        /* background-image: url("/Users/me/my-app-3/public/images/texture.png"); */
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    }
+        background-size: cover;
+        background-repeat: repeat;
+        background-image: linear-gradient(to right top, #91bcf1, #82c1f1, #8ad2f5, #9be2f6, #b2f1f8, #ccfffc);
+    }  
 
+                         
+#quizWhite {
+    width: 100%;
+    padding: 45px;
+    margin: 0px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 15px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
 }
+}
+
 
 .answerChoice {
     padding: 5px;
@@ -63,15 +73,6 @@ background-image: linear-gradient(to right top, #fad5ea, #eecae9, #ddc0e9, #c9b7
     font-size: 3.5vh;
 }
 
-#quizWhite {
-    width: 100%;
-    padding: 45px;
-    margin: 0px;
-    background-color: rgb(249, 249, 249);
-    border-radius: 15px;
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
-}
-
 
 
 
@@ -96,17 +97,20 @@ background-image: linear-gradient(to right top, #fad5ea, #eecae9, #ddc0e9, #c9b7
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #yourQuizScore {
     color: #313540;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 4rem;
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
     z-index: 1;
 }
 
@@ -117,3 +121,4 @@ background-image: linear-gradient(to right top, #fad5ea, #eecae9, #ddc0e9, #c9b7
     font-weight: 500;
     font-size: 3.0vh;
 }
+

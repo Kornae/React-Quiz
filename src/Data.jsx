@@ -12,6 +12,8 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
 import TransitionsModal from "./Modal";
+import Divider from '@mui/material/Divider';
+
 
 
 
@@ -88,6 +90,10 @@ export const Data = () => {
         setIsSelect(false)
     }
 
+    let handleExit = () => {
+        window.location = '/'
+    }
+
     let handleChoiceSelection = (e) => {
         setIsSelect(true)
         let yourAnswer = e.target.id;
@@ -101,11 +107,6 @@ export const Data = () => {
             setIsIncorrect(true)
         }
     }
-
-    let handleExit = () => {
-        window.location = '/'
-    }
-
 
 
     const totalScore = (score * 10)
@@ -195,8 +196,12 @@ export const Data = () => {
 
 
 
-                        {isSelect ? <Button onClick={handeleClick}>Next <NavigateNextIcon /></Button> : <TransitionsModal />
+                        {count === 9 && isSelect ? <Button color="info" style={{ float: 'right', padding: '5px 20px' }} onClick={handeleClick}>Submit <NavigateNextIcon /></Button>
+
+                            : isSelect ? <Button color="info" style={{ float: 'right', padding: '5px 20px' }} onClick={handeleClick}>Next <NavigateNextIcon /></Button> : <TransitionsModal />
                         }
+
+
 
 
 
@@ -211,42 +216,49 @@ export const Data = () => {
 
         return <div id={GameCSS.quizContainer}>
 
-            <div className="container">
 
-                <div id={GameCSS.quizWhite} className="">
 
-                    <div id="quizCard" className="">
+            <div id={GameCSS.quizWhite} style={{ width: '70%' }} >
 
-                        <div>
-                            <span> <h1 id={GameCSS.yourQuizScore}>{totalScore}</h1></span>
-                            <div className={GameCSS.progressContainer}>
-                                <ProgressBar value={totalScore} max={100} width={400} className="custom-progress-bar" />
-                            </div>
-                         
-                            <Correct
-                                yourScore={score}
-                                totalCount={count}
-                                right={`Correct: ${score}`}
-                                wrong={`Incorrect: ${count - score}`}
-                            />
+                <div id="quizCard"  >
 
-                            <h2 style={{ padding: '20px' }} id={GameCSS.message}>{message}</h2>
-                         
-                        </div>
 
-                        <LinearDeterminate
-                            current={count * 10}
+
+                    <div className={GameCSS.centeredContainer}>
+                        <Chip
+                            avatar={<Avatar alt="Natacha" src={pic} />}
+                            label={title.toUpperCase()}
+
                         />
-
-
-                        {isSelect ? <Button onClick={handeleClick}>Next <NavigateNextIcon /></Button> : <Button onClick={handleExit}>Done </Button>
-                        }
-
 
                     </div>
 
+                    <div>
+                        <div className={GameCSS.progressContainer}>
+
+                            <ProgressBar value={totalScore} max={100} width={'22rem'} className="custom-progress-bar" />
+                            <span> <h1 id={GameCSS.yourQuizScore}> {totalScore} </h1></span>
+                        </div>
+
+                        <Correct
+                            yourScore={score}
+                            totalCount={count}
+                            right={`Correct: ${score}`}
+                            wrong={`Incorrect: ${count - score}`}
+                        />
+               
+                        <h2 style={{ padding: '20px' }} id={GameCSS.message}>{message}</h2>
+                    
+
+                    </div>
+                    <Divider style={{ backgroundColor: '#95dffc' }} />
+
+                    <Button style={{ float: 'right', padding: '10px 20px' }} onClick={handleExit}>Done <NavigateNextIcon /></Button>
+
                 </div>
+
             </div>
+
 
         </div>
 

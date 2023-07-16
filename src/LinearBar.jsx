@@ -4,8 +4,8 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 export default function LinearDeterminate(props) {
     return (
-        <Box sx={{ width: '100%', paddingTop: '20px' }}>
-            <LinearProgress variant="determinate" value={props.current} />
+        <Box sx={{ width: '100%', padding:'10px' }}>
+            <LinearProgress color='info' variant="determinate" sx={{ borderRadius: 10 }} value={props.current} />
         </Box>
     );
 }

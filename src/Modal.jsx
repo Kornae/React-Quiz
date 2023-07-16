@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CheckIcon from '@mui/icons-material/Check';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import KeyboardArrowRightSharpIcon from '@mui/icons-material/KeyboardArrowRightSharp';
 
 const style = {
     position: 'absolute',
@@ -33,7 +34,7 @@ export default function TransitionsModal() {
 
     return (
         <div>
-            <Button onClick={handleOpen}>Exit</Button>
+            <Button color="info" style={{ float: 'right', padding: '5px 20px' }} onClick={handleOpen}>Exit <KeyboardArrowRightSharpIcon /> </Button>
             <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"

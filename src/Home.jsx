@@ -14,6 +14,8 @@ function Home() {
         setFilteredQuiz(filteredQuizzes);
     };
 
+    
+
     return (
         <div className="App center">
             <section id="main-background" className="gradient">

@@ -6,7 +6,8 @@ function Card(props) {
 
     const imageStyle = {
         backgroundImage: `url(${props.image})`,
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
     };
 
     return <div className="card-center col-lg-4 col-md-6 col-sm-12 space">
