@@ -40,6 +40,7 @@ function Home() {
                             quizTitle={quizItem.title}
                             image={quizItem.img}
                             apiLink={quizItem.api}
+                            quizTopic={quizItem.category}
                         />
                     ))}
                 </div>

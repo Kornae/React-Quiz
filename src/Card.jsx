@@ -27,7 +27,7 @@ function Card(props) {
                         <h3 className="quiz-title">{props.quizTitle}</h3>
                         <div className="quiz-info">
                             <div className="quiz-info-section">
-                                <span className="topic-tag">Entertainment</span>
+                                <span className="topic-tag">{props.quizTopic}</span>
                             </div>
                         </div>
                     </a>
