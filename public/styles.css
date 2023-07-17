@@ -5,9 +5,8 @@
         background-size: cover;
         opacity: 0.92;
         background-color: #000000;
-background-image: linear-gradient(to right top, #f99bd0, #e697d8, #cf95df, #b594e3, #9793e5, #7f9eed, #65a7f2, #48b0f2, #42c4f6, #53d7f7, #71e9f5, #94f9f3);
-    background-image: linear-gradient(to left bottom, #0603ec, #003bf6, #0059fb, #0a71fd, #3f88fc, #3999ff, #44a9ff, #59b8fd, #53c5fe, #59d2fc, #68ddf9, #7de8f6);
-}
+        background-image: linear-gradient(to left bottom, #0603ec, #003bf6, #0059fb, #0a71fd, #3f88fc, #3999ff, #44a9ff, #59b8fd, #53c5fe, #59d2fc, #68ddf9, #7de8f6);
+    }
 
     #title {
         font-size: 35px;
@@ -38,14 +37,12 @@ background-image: linear-gradient(to right top, #f99bd0, #e697d8, #cf95df, #b594
     #main-background {
         color: white;
         background-repeat: no-repeat;
-        background: url('../svg/yw.svg');
-        background-size:cover;
+        background-size: cover;
         opacity: 0.92;
         background-color: #000000;
-    background-image: linear-gradient(to right top, #f99bd0, #e691d5, #ce89da, #b182df, #8c7ee2, #6f8bec, #4b96f3, #00a0f5, #00b9fa, #1ed0f9, #61e6f5, #94f9f3);
-    background-image: linear-gradient(to left bottom, #0603ec, #003bf6, #0059fb, #0a71fd, #3f88fc, #3999ff, #44a9ff, #59b8fd, #53c5fe, #59d2fc, #68ddf9, #7de8f6);
-      
-}
+        background-image: linear-gradient(to left bottom, #0603ec, #003bf6, #0059fb, #0a71fd, #3f88fc, #3999ff, #44a9ff, #59b8fd, #53c5fe, #59d2fc, #68ddf9, #7de8f6);
+
+    }
 
     #title {
         padding: 3.5rem 3rem 0rem;
@@ -94,10 +91,6 @@ a {
     cursor: default;
 }
 
-/* Display Visibility of Cards */
-.disappear {
-    display: none;
-}
 
 /* Spacing/Padding of Main Page */
 .container-fluid {
@@ -154,14 +147,14 @@ a {
 }
 
 .quiz-card-header {
- 
+
     margin: 0;
     height: 225px;
     width: 100%;
     display: grid;
     /* border-top-left-radius: 50px;
     border-top-right-radius: 50px; */
-    border-radius:40px;
+    border-radius: 40px;
 }
 
 .quiz-card:hover {
