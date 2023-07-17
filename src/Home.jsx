@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import quiz from './quizzes';
+import quizzes from './quizzes';
 import Filter from "./Filter";
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 
 function Home() {
-    const [filteredQuiz, setFilteredQuiz] = useState(quiz);
+    const [filteredQuizzes, setFilteredQuizzes] = useState(quizzes);
 
     const handleSearch = (searchTerm) => {
-        const filteredQuizzes = quiz.filter((quizItem) =>
+        const filteredQuizItems = quizzes.filter((quizItem) =>
             quizItem.title.toLowerCase().includes(searchTerm.toLowerCase())
         );
-        setFilteredQuiz(filteredQuizzes);
+        setFilteredQuizzes(filteredQuizItems);
     };
-
-    
 
     return (
         <div className="App center">
@@ -34,7 +32,7 @@ function Home() {
             </section>
             <div className="container">
                 <div className="row" id="history">
-                    {filteredQuiz.map((quizItem) => (
+                    {filteredQuizzes.map((quizItem) => (
                         <Card
                             key={quizItem.id}
                             quizTitle={quizItem.title}
